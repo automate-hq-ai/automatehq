@@ -37,13 +37,20 @@ const Contact = () => {
     setIsSubmitting(true);
     
     try {
-      // Use a simple and reliable approach - send to your email
-      const emailData = {
-        to: 'hello.automatehq@gmail.com', // Replace with your actual email
-        subject: 'New Contact Form Submission - AutomateHQ',
-        message: `
-New Contact Form Submission:
-
+      console.log('Submitting form data:', formData);
+      
+      // Web3Forms implementation - fixed structure
+      const response = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          access_key: '248d7cbe-2d2a-435f-aaab-a619c5a78b92',
+          from_name: formData.name,
+          from_email: formData.email,
+          subject: 'New Contact Form Submission - AutomateHQ',
+          message: `
 Name: ${formData.name}
 Email: ${formData.email}
 Company Name: ${formData.companyName}
@@ -54,29 +61,22 @@ Additional Info: ${formData.additionalInfo || 'N/A'}
 
 ---
 Sent from AutomateHQ Website
-        `.trim()
-      };
-
-      // Use a reliable email service (Web3Forms - free and reliable)
-      const response = await fetch('https://api.web3forms.com/submit', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          access_key: '248d7cbe-2d2a-435f-aaab-a619c5a78b92', // Get free key from web3forms.com
-          name: formData.name,
-          email: formData.email,
+          `.trim(),
+          // Additional fields for better organization
           company: formData.companyName,
           job_title: formData.jobTitle,
           automation_areas: formData.automationAreas.join(', '),
           timeline: formData.timeline,
-          additional_info: formData.additionalInfo || 'N/A',
-          subject: 'New Contact Form Submission - AutomateHQ'
+          additional_info: formData.additionalInfo || 'N/A'
         }),
       });
 
-      if (response.ok) {
+      console.log('Response status:', response.status);
+      const result = await response.json();
+      console.log('Response result:', result);
+      
+      if (response.ok && result.success) {
+        console.log('✅ Email sent successfully!');
         setSubmitStatus('success');
         setFormData({
           name: '',
@@ -89,11 +89,11 @@ Sent from AutomateHQ Website
         });
         setTimeout(() => setSubmitStatus('idle'), 3000);
       } else {
-        console.error('Email service error:', response.status);
+        console.error('❌ Web3Forms error:', result);
         setSubmitStatus('error');
       }
     } catch (error) {
-      console.error('Error sending message:', error);
+      console.error('❌ Network error:', error);
       setSubmitStatus('error');
     } finally {
       setIsSubmitting(false);
