@@ -39,7 +39,7 @@ const Contact = () => {
     try {
       // Use a simple and reliable approach - send to your email
       const emailData = {
-        to: 'anurag@automatehq.com', // Replace with your actual email
+        to: 'hello.automatehq@gmail.com', // Replace with your actual email
         subject: 'New Contact Form Submission - AutomateHQ',
         message: `
 New Contact Form Submission:
