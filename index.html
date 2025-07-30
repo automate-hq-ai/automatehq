@@ -25,13 +25,22 @@
       // make a new request.
       var segmentCount = 1;
       var l = window.location;
-      l.replace(
-        l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
-        l.pathname.split('/').slice(0, 1 + segmentCount).join('/') + '/?/' +
-        l.pathname.slice(1).split('/').slice(segmentCount).join('/').replace(/&/g, '~and~') +
-        (l.search ? '&' + l.search.slice(1).replace(/&/g, '~and~') : '') +
-        l.hash
-      );
+      
+      // Only redirect if there's a query string with redirect info
+      if (l.search) {
+        var redirect = l.search.slice(1).split('&').map(function(val) {
+          return val.split('=').map(function(v) {
+            return decodeURIComponent(v.replace(/~and~/g, '&'));
+          });
+        }).reduce(function(obj, val) {
+          obj[val[0]] = val[1];
+          return obj;
+        }, {});
+        
+        if (redirect['/']) {
+          l.replace(l.pathname.split('/').slice(0, 1 + segmentCount).join('/') + '/' + redirect['/'] + l.hash);
+        }
+      }
     </script>
   </head>
   <body>
@@ -39,4 +48,3 @@
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
-
