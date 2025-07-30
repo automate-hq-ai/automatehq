@@ -236,7 +236,7 @@ const Comparison = () => {
               transition={{ duration: 0.5, delay: 0.1 }}
               className="bg-white p-6 rounded-lg shadow-lg text-center flex flex-col items-center"
             >
-              <img src="/chatgpt-logo.png" alt="CustomGPT" className="h-16 mb-4" />
+              <img src="./chatgpt-logo.png" alt="CustomGPT" className="h-16 mb-4" />
               <h3 className="text-xl font-bold text-gray-900 mb-2">CustomGPTs</h3>
               <p className="text-gray-600 text-sm">We help create Custom made GPTs for your business needs with the open to self host your own data.</p>
             </motion.div>
@@ -249,7 +249,7 @@ const Comparison = () => {
               transition={{ duration: 0.5, delay: 0.2 }}
               className="bg-white p-6 rounded-lg shadow-lg text-center flex flex-col items-center"
             >
-              <img src="/elevenlabs-logo.png" alt="ElevenLabs" className="h-16 mb-4" />
+              <img src="./elevenlabs-logo.png" alt="ElevenLabs" className="h-16 mb-4" />
               <h3 className="text-xl font-bold text-gray-900 mb-2">ElevenLabs</h3>
               <p className="text-gray-600 text-sm">ElevenLabs is a software company that specializes in developing natural-sounding speech synthesis software using deep learning.</p>
             </motion.div>
@@ -262,7 +262,7 @@ const Comparison = () => {
               transition={{ duration: 0.5, delay: 0.3 }}
               className="bg-white p-6 rounded-lg shadow-lg text-center flex flex-col items-center"
             >
-              <img src="/gemini-logo.png" alt="Gemini" className="h-16 mb-4" />
+              <img src="./gemini-logo.png" alt="Gemini" className="h-16 mb-4" />
               <h3 className="text-xl font-bold text-gray-900 mb-2">Gemini</h3>
               <p className="text-gray-600 text-sm">Google's advanced AI initiative, Gemini, stands as a powerful competitor in the AI landscape, offering robust capabilities for diverse applications.</p>
             </motion.div>
@@ -275,7 +275,7 @@ const Comparison = () => {
               transition={{ duration: 0.5, delay: 0.4 }}
               className="bg-white p-6 rounded-lg shadow-lg text-center flex flex-col items-center"
             >
-              <img src="/zapier-logo.png" alt="Zapier" className="h-16 mb-4" />
+              <img src="./zapier-logo.png" alt="Zapier" className="h-16 mb-4" />
               <h3 className="text-xl font-bold text-gray-900 mb-2">Zapier</h3>
               <p className="text-gray-600 text-sm">Zapier is a versatile platform enabling seamless connections between various applications to automate workflows efficiently.</p>
             </motion.div>
@@ -288,7 +288,7 @@ const Comparison = () => {
               transition={{ duration: 0.5, delay: 0.5 }}
               className="bg-white p-6 rounded-lg shadow-lg text-center flex flex-col items-center"
             >
-              <img src="/make-logo.png" alt="Make.com" className="h-16 mb-4" />
+              <img src="./make-logo.png" alt="Make.com" className="h-16 mb-4" />
               <h3 className="text-xl font-bold text-gray-900 mb-2">Make</h3>
               <p className="text-gray-600 text-sm">Make.com offers a highly visual and intuitive interface for building complex automated workflows, often surpassing Zapier in capability for intricate tasks.</p>
             </motion.div>
@@ -301,7 +301,7 @@ const Comparison = () => {
               transition={{ duration: 0.5, delay: 0.6 }}
               className="bg-white p-6 rounded-lg shadow-lg text-center flex flex-col items-center"
             >
-              <img src="/python-logo.png" alt="Python" className="h-16 mb-4" />
+              <img src="./python-logo.png" alt="Python" className="h-16 mb-4" />
               <h3 className="text-xl font-bold text-gray-900 mb-2">JavaScript & Python</h3>
               <p className="text-gray-600 text-sm">We leverage JavaScript and Python for custom scripting, enabling us to build highly sophisticated and tailored automation solutions for even the most complex requirements.</p>
             </motion.div>
@@ -314,7 +314,7 @@ const Comparison = () => {
               transition={{ duration: 0.5, delay: 0.7 }}
               className="bg-white p-6 rounded-lg shadow-lg text-center flex flex-col items-center"
             >
-              <img src="/midjourney-logo.png" alt="Midjourney" className="h-16 mb-4" />
+              <img src="./midjourney-logo.png" alt="Midjourney" className="h-16 mb-4" />
               <h3 className="text-xl font-bold text-gray-900 mb-2">Midjourney</h3>
               <p className="text-gray-600 text-sm">Midjourney is an independent research lab exploring new mediums of thought and expanding the imaginative powers of the human species.</p>
             </motion.div>
@@ -327,7 +327,7 @@ const Comparison = () => {
               transition={{ duration: 0.5, delay: 0.8 }}
               className="bg-white p-6 rounded-lg shadow-lg text-center flex flex-col items-center"
             >
-              <img src="/notion-ai-logo.png" alt="Notion AI" className="h-16 mb-4" />
+              <img src="./notion-ai-logo.png" alt="Notion AI" className="h-16 mb-4" />
               <h3 className="text-xl font-bold text-gray-900 mb-2">Notion AI</h3>
               <p className="text-gray-600 text-sm">Notion AI integrates artificial intelligence directly into your workspace, automating tasks and generating content to enhance productivity.</p>
             </motion.div>
@@ -340,7 +340,7 @@ const Comparison = () => {
               transition={{ duration: 0.5, delay: 0.9 }}
               className="bg-white p-6 rounded-lg shadow-lg text-center flex flex-col items-center"
             >
-              <img src="/synthesia-logo.png" alt="Synthesia" className="h-16 mb-4" />
+              <img src="./synthesia-logo.png" alt="Synthesia" className="h-16 mb-4" />
               <h3 className="text-xl font-bold text-gray-900 mb-2">Synthesia</h3>
               <p className="text-gray-600 text-sm">Synthesia is an AI video generation platform that allows users to create professional videos with AI avatars and voiceovers from text.</p>
             </motion.div>
@@ -353,7 +353,7 @@ const Comparison = () => {
               transition={{ duration: 0.5, delay: 1.0 }}
               className="bg-white p-6 rounded-lg shadow-lg text-center flex flex-col items-center"
             >
-              <img src="/claude-logo.png" alt="Claude" className="h-16 mb-4" />
+              <img src="./claude-logo.png" alt="Claude" className="h-16 mb-4" />
               <h3 className="text-xl font-bold text-gray-900 mb-2">Claude</h3>
               <p className="text-gray-600 text-sm">Claude is a large language model developed by Anthropic, known for its strong performance in conversational AI and complex reasoning tasks.</p>
             </motion.div>
@@ -366,7 +366,7 @@ const Comparison = () => {
               transition={{ duration: 0.5, delay: 1.1 }}
               className="bg-white p-6 rounded-lg shadow-lg text-center flex flex-col items-center"
             >
-              <img src="/n8n-logo.png" alt="n8n" className="h-16 mb-4" />
+              <img src="./n8n-logo.png" alt="n8n" className="h-16 mb-4" />
               <h3 className="text-xl font-bold text-gray-900 mb-2">n8n</h3>
               <p className="text-gray-600 text-sm">n8n is a fair-code licensed tool that helps you automate workflows by connecting various apps and services.</p>
             </motion.div>
@@ -379,7 +379,7 @@ const Comparison = () => {
               transition={{ duration: 0.5, delay: 1.2 }}
               className="bg-white p-6 rounded-lg shadow-lg text-center flex flex-col items-center"
             >
-              <img src="/perplexity-logo.png" alt="Perplexity" className="h-16 mb-4" />
+              <img src="./perplexity-logo.png" alt="Perplexity" className="h-16 mb-4" />
               <h3 className="text-xl font-bold text-gray-900 mb-2">Perplexity AI</h3>
               <p className="text-gray-600 text-sm">Perplexity AI is a conversational answer engine that provides direct answers and citations from various sources, offering a new way to discover information.</p>
             </motion.div>
